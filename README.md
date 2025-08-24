@@ -46,7 +46,7 @@ def delete_task():
 def refresh_list():
     listbox.delete(0, tk.END)
     for idx, t in enumerate(tasks):
-        status = "✅" if t["done"] else "⏳"
+        status = "✅✅" if t["done"] else "⏳"
         listbox.insert(tk.END, f"{status} {t['task']}")
 
 # Main window
